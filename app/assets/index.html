@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" ng-app="app">
+
+    <head>       
+        <base href="/">    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="description" content="Power plant maps">
+        <meta name="author" content="Mk.Zaker">
+
+        <title > :: {{$state.current.ncyBreadcrumb.label|translate}}</title>
+        <link rel="stylesheet" href="/stylesheets/vendor.css?DIGEST">
+        <link rel="stylesheet" href="/stylesheets/app.css?DIGEST">
+    </head>
+
+    <body data-ng-controller="ShellController as shellVm">
+        <ui-view layout="row" layout-fill ng-cloak/>
+
+        <script src="javascript/vendor.js?DIGEST"></script>
+        <script src="javascript/extra.js?DIGEST"></script>
+        <script src="javascript/templates.js?DIGEST"></script>
+        <script src="javascript/app.js?DIGEST"></script>
+    </body>
+
+</html>
